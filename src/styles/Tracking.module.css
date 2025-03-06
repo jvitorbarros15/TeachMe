@@ -1,0 +1,83 @@
+.trackingContainer {
+    padding: 2rem;
+    margin-top: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    text-align: center;
+    color: #0066cc;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.goalsList {
+    list-style: none;
+    padding: 0;
+}
+
+.goalsList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.goalsList li input[type="checkbox"] {
+    margin-right: 1rem;
+}
+
+.chartContainer {
+    height: 300px;
+    position: relative;
+}
+
+.performanceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.performanceContainer h4 {
+    color: #0066cc;
+    margin-bottom: 0.5rem;
+}
+
+.performanceContainer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.performanceContainer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.goalSection {
+    margin-bottom: 2rem;
+}
+
+.goalList {
+    list-style: none;
+    padding: 0;
+}
+
+.goalItem {
+    margin-bottom: 1rem;
+}
+
+.performanceRating {
+    margin-top: 2rem;
+} 

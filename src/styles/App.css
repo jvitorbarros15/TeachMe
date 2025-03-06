@@ -1,0 +1,233 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Logo */
+img {
+    height: 60px;
+    width: 300px;
+    object-fit: contain;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #0066cc; /* Brighter blue */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Navbar Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 1rem; /* Add space between buttons */
+}
+
+.nav-buttons button {
+    background-color: #ffd700; /* Brighter yellow */
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-buttons button:hover {
+    background-color: #ffcd00; /* Slightly darker bright yellow */
+}
+
+/* Login Page Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffd700 0%, #0066cc 100%); /* Brighter gradient */
+}
+
+/* Centered Login Box */
+.login-box {
+    background-color: #fff;
+    color: #444;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 400px;
+}
+
+.login-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #0066cc;
+}
+
+/* Input Bar Styling */
+.login-box input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.login-box button {
+    background-color: #ffd700;
+    color: #0066cc;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.login-box button:hover {
+    background-color: #ffcd00;
+}
+
+/* General Layout */
+.homepage-container {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+/* Chat Sidebar */
+.chat-sidebar {
+    width: 300px;
+    background-color: #222; /* Darker black for contrast */
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    position: fixed;
+    top: 60px;
+    left: 0;
+}
+
+.chat-sidebar h4 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.new-chat-button {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.new-chat-button:hover {
+    background-color: #0052a3;
+}
+
+/* Chat Item Styles */
+.chat-item {
+    padding: 0.8rem;
+    border-radius: 5px;
+    background-color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 0.5rem;
+}
+
+.chat-item h5 {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #ddd;
+}
+
+.chat-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.chat-item:hover {
+    background-color: #444;
+}
+
+.chat-item.active {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+.chat-item.active h5,
+.chat-item.active p {
+    color: #fff;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    margin-left: 300px;
+    padding: 2rem;
+    overflow: auto;
+}
+
+.welcome-banner {
+    background-color: #ffd700;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.explore-button {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.explore-button:hover {
+    background-color: #0052a3;
+}
+
+/* Chat Content Display */
+.chat-content {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    color: #444;
+}
+
+/* Add any other styles you want to change in dark mode */

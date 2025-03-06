@@ -1,0 +1,64 @@
+/* Navbar Container */
+.navbar {
+    width: 100%;
+    background-color: #0066cc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Logo Container */
+.logoContainer {
+    cursor: pointer;
+}
+
+/* Navigation Buttons */
+.navButtons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Standard Navigation Links */
+.navLink {
+    background-color: #ffd700; /* ✅ Yellow background */
+    color: #333; /* Dark text for contrast */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navLink:hover {
+    background-color: #ffcd00; /* Slightly darker yellow on hover */
+}
+
+/* Profile Button (User Icon) */
+.profileButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd700; /* ✅ Yellow background */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profileButton:hover {
+    background-color: #ffcd00;
+}
+
+.profileIcon {
+    color: #333; /* Dark icon for contrast */
+    font-size: 1.5rem;
+}

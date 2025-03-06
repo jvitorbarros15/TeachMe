@@ -1,0 +1,239 @@
+/* Homepage Container */
+.homepageContainer {
+    display: flex;
+    flex-direction: row; /* Align children in a row */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    font-family: 'Roboto', sans-serif; /* Set a consistent font */
+    background-color: #1e1e1e; /* Dark background for the entire page */
+    color: #ffffff; /* Light text color */
+}
+
+/* Title */
+.title {
+    text-align: center;
+    color: #0066cc;
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f0f8ff; /* Light background for hero section */
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem; /* Larger font size for hero title */
+    color: #0066cc;
+}
+
+.hero p {
+    font-size: 1.2rem; /* Font size for hero description */
+    color: #333;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Card Headings */
+.card h3 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.5rem; /* Larger font size for headings */
+}
+
+/* Goals List */
+.goalsList {
+    list-style: none;
+    padding: 0;
+}
+
+.goalsList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.goalsList li input[type="checkbox"] {
+    margin-right: 1rem;
+}
+
+/* Navigation Links */
+.navLink {
+    padding: 0.5rem 1rem;
+    background-color: #ffd700;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.3s; /* Add transform for hover */
+    cursor: pointer;
+    user-select: none;
+}
+
+.navLink:hover {
+    background-color: #ffcd00;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Chart Container */
+.chartContainer {
+    height: 300px; /* Set a height for the chart */
+    position: relative;
+    margin-bottom: 2rem; /* Space below the chart */
+}
+
+/* Performance Section */
+.performanceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.performanceContainer h4 {
+    color: #0066cc;
+    margin-bottom: 0.5rem;
+}
+
+.performanceContainer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.performanceContainer ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Chat Sidebar */
+.chatSidebar {
+    width: 300px; /* Fixed width for sidebar */
+    background-color: #333; /* Dark color for sidebar */
+    padding: 1.5rem; /* Padding for content */
+    border-right: 1px solid #444; /* Darker border for separation */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+}
+
+/* Main Content Area */
+.mainContent {
+    flex: 1; /* Take remaining space */
+    padding: 2rem; /* Padding for content */
+    background-color: #ffffff; /* White background for main content */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    max-height: calc(100vh - 100px); /* Adjust this value based on your navbar height */
+    margin-top: 60px; /* Add margin to push content below the navbar */
+}
+
+/* Welcome Banner */
+.welcomeBanner {
+    background-color: #ffd700; /* Bright background */
+    text-align: center; /* Center text */
+    padding: 1rem; /* Padding for spacing */
+    margin-bottom: 2rem; /* Space below */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Chat Item Styles */
+.chatItem {
+    padding: 0.8rem; /* Padding for items */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    background-color: #444; /* Dark grey for chat items */
+    margin-bottom: 0.4rem; /* Space between chat items */
+    color: #ffffff; /* Change text color back to white */
+    font-size: 0.9rem; /* Smaller font size */
+    width: 100%; /* Stretch to full width */
+}
+
+.chatItem:hover {
+    background-color: #555; /* Slightly lighter grey on hover */
+}
+
+.chatItem.active {
+    background-color: #0066cc; /* Active item background (blue) */
+}
+
+/* Chat Messages Display */
+.chatMessages {
+    flex: 1; /* Take remaining space */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    padding: 1.5rem; /* Padding for messages */
+    background-color: #ffffff; /* White background for messages */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    color: #000000; /* Change text color to black */
+}
+
+/* Input Styles */
+.chatInput {
+    flex: 1; /* Allow input to take available space */
+    padding: 0.8rem; /* Padding for input */
+    border: 1px solid #444; /* Dark border for input */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffffff; /* White background for input */
+    color: #000000; /* Change text color to black */
+    margin: 0; /* Remove margin */
+}
+
+/* Send Button */
+.sendButton {
+    background-color: #0066cc; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 0.8rem 1.5rem; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-left: 0.5rem; /* Space between input and button */
+}
+
+.sendButton:hover {
+    background-color: #0052a3; /* Darker on hover */
+}
+
+/* New Learning Button */
+.newChatButton {
+    background-color: #0066cc; /* Set to blue */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 0.4rem 0.8rem; /* Smaller padding for a smaller button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-bottom: 1rem; /* Space below button */
+    width: auto; /* Set width to auto for a smaller button */
+    text-align: center; /* Center text inside the button */
+}
+
+.newChatButton:hover {
+    background-color: #0052a3; /* Darker on hover */
+} 
+

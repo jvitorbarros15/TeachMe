@@ -1,0 +1,1 @@
+Make this project proper for Next.js anmd make it good to use
